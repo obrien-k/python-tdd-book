@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import unittest
-
+	
 class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self):
@@ -40,7 +40,7 @@ class NewVisitorTest(unittest.TestCase):
 		# When she hits enters, the page updates, and now the page lists
 		# "1: Buy peacock feathers" as an item in a to-do list
 		inputbox.send_keys(Keys.ENTER)
-		time.sleep(1)
+		time.sleep(10)
 		self.check_for_row_in_list_table('1: Buy peacock feathers')
 
 		
@@ -60,7 +60,7 @@ class NewVisitorTest(unittest.TestCase):
 		# that the site has generated a unique URL for her -- there is some
 		# explanatory text to that effect.
 		self.fail('Finish the test!')
-		
+
 		# She visits the URL - her to-do lsit is still there.
 
 		# Satisfied, she goes back to sleep
