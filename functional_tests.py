@@ -40,7 +40,7 @@ class NewVisitorTest(unittest.TestCase):
 		# When she hits enters, the page updates, and now the page lists
 		# "1: Buy peacock feathers" as an item in a to-do list
 		inputbox.send_keys(Keys.ENTER)
-		time.sleep(10)
+		time.sleep(1)
 		self.check_for_row_in_list_table('1: Buy peacock feathers')
 
 		
